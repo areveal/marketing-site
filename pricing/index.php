@@ -14,79 +14,97 @@
 					<h3>Free</h3>					
 					<ul class="features">
 						<li><span>1000 surveys / month</span> Upgrade for More</li>
-						<li>Unlimited Campaigns</li>
-						<li>Unlimited In-App Responses</li>
-						<li>Survey Reminders</li>
-						<li>Trend Analysis</li>
-						<li>Email Support</li>
-						<li>Data Export</li>
-					</ul>		
-					<div class="price">
-						$49 /month
-					</div>	
-					<div class="price">
-						$490 /year					
-					</div>			
+						<li>1 Campaign</li>
+						<li>1 User</li>
+						<li>30 Day Data Retention</li>
+					</ul>
+					<div class="features">
+						<ul>
+							<li>Feedback Management</li>
+							<li>Email Support</li>
+						</ul>
+					</div>
 				</li>
 				
 				<li class="price-column">
-					<h3>Professional</h3>					
+					<h3>NPS Lite</h3>					
 					<ul class="features">
-						<li><span>2,500</span> surveys / month</li>
-						<li>Unlimited Campaigns</li>
-						<li>Unlimited In-App Responses</li>
-						<li>Survey Reminders</li>
-						<li>Trend Analysis</li>
-						<li>Email Support</li>
-						<li>Data Export</li>
+						<li><span>2,500 surveys / month</span> + $15 per 1k extra</li>
+						<li>2 Campaigns</li>
+						<li>5 Users</li>
+						<li>1 Year Data Retention</li>
 					</ul>
+					<div class="features">
+						<ul>
+							<li>Everything in Free, plus:</li>
+							<br>
+							<li>In-App Follow-Up</li>
+							<li>Automated Survey Reminders</li>
+							<li>API & Integrations</li>
+							<li>Trend & Sentiment Analysis</li>
+							<li>Survey Throttle</li>
+							<li>Recurring Surveys</li>
+							<li>Segment Analysis</li>
+							<li>Data Export</li>
+						</ul>
+					</div>
 					<div class="price">
 						$129 /month 
 					</div>
 					<div class="price">
-						$1,290 /year
+						$1,160 /year
 					</div>						
 				</li>
 				
 				<li class="price-column">
-					<h3>Growth</h3>					
+					<h3>NPS Complete</h3>					
 					<ul class="features">
-						<li><span>10,000</span> surveys / month</li>
+						<li><span>25,000 surveys / month</span> + $10 per 1k extra</li>
 						<li>Unlimited Campaigns</li>
-						<li>Unlimited In-App Responses</li>
-						<li>Survey Reminders</li>
-						<li>Trend Analysis</li>
-						<li>Email Support</li>
-						<li>Data Export</li>
-					</ul>	
-					<div class="price">
-						$249 /month 
+						<li>Unlimited Users</li>
+						<li>Unlimited Data Retention</li>
+					</ul>
+					<div class="features">
+						<ul>
+							<li>Everything in NPS Lite, plus:</li>
+							<br>
+							<li>Drip Surveys</li>
+							<li>Historical Customer Profiles</li>
+							<li>Employee NPS (eNPS)</li>
+							<li>Onboarding</li>
+							<li>Priority Phone & Email Support</li>
+						</ul>
 					</div>
-					<div class="price">
-						$2,490 /year
-					</div>					
-				</li>
-				
-				<li class="price-column">
-					<h3>Rainmaker</h3>					
-					<ul class="features">
-						<li><span>30,000</span> surveys / month</li>
-						<li>Unlimited Campaigns</li>
-						<li>Unlimited In-App Responses</li>
-						<li>Survey Reminders</li>
-						<li>Trend Analysis</li>
-						<li>Email &amp; Phone Support</li>
-						<li>Data Export</li>
-					</ul>	
 					<div class="price">
 						$499 /month 
 					</div>
 					<div class="price">
-						$4,990 /year
+						$4,490 /year
 					</div>					
+				</li>
+				
+				<li class="price-column">
+					<h3>Enterprise</h3>					
+					<ul class="features">
+						<li><span>Unlimited surveys</span> (sky's the limit)</li>
+						<li>Unlimited Campaigns</li>
+						<li>Unlimited Users</li>
+						<li>Unlimited Data Retention</li>
+					</ul>
+					<div class="features">
+						<ul>
+							<li>Everything in NPS Complete, plus:</li>
+							<br>
+							<li>Custom Onboarding & Training</li>
+							<li>Campaign Administration<br>(let the experts handle it)</li>
+							<li>Dedicated Account Manager<br>(your very own red phone)</li>
+							<li>Dedicated Sending IP & Custom Return Path</li>
+						</ul>
+					</div>			
 				</li>	
 
-				<div class="price-discount">-- Get 2 months free with yearly billing! --</div>			
+				<div class="price-discount">-- Get 3+ months free with yearly billing! --</div>			
+				<div class="features-header">-- Features --</div>			
 			</ul>
 
 			<h3 class="guarantee">Need a larger plan or a higher level of support? <a href="mailto:grow@promoter.io?subject=Custom Plan">Shoot us an email.</a></h3>
