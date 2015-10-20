@@ -11,9 +11,9 @@
 			<ul class="pricing-table">				
 				
 				<li class="price-column">
-					<h3>Starter</h3>					
+					<h3>Free</h3>					
 					<ul class="features">
-						<li><span>500</span> surveys / month</li>
+						<li><span>1000 surveys / month</span> Upgrade for More</li>
 						<li>Unlimited Campaigns</li>
 						<li>Unlimited In-App Responses</li>
 						<li>Survey Reminders</li>
