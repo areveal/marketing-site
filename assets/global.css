@@ -1191,11 +1191,14 @@ ul.features li {
   border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 ul.features li:first-child {
-  background: rgba(0,0,0, 0.12);
+  /*background: rgba(0,0,0, 0.12);*/
 }
 ul.features li:first-child span {
   display: block;
-  font: 1.9rem/1.2 'proxima-semi';
+  font: 1.6rem/1.2 'proxima-semi';
+}
+ul.features li span.small-text {
+  font: 1.2rem/1.2 'proxima-semi';
 }
 ul.features li:last-child {
   border-bottom: none;
@@ -1212,18 +1215,22 @@ ul.features li.sends {
   border-top: 1px solid rgba(0,0,0, 0.2);
   border-bottom: none;
 }
-.price:last-child {
-  margin-top: 0; 
-  border-top: 1px solid rgba(0,0,0,0.2);
+.invisible {
+  visibility: hidden;
 }
 .price span {
   display: block;
-  font-family: 'proxima-regular';
-  font-size: 2.8rem;
-  line-height: 1;
 }
-.price span sup {
-  font-size: 1.4rem;
+.price span.monthly {
+  font-size: .9rem;
+}
+.price a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.price a:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 .price .contact a {
   color: #fff;
@@ -1236,19 +1243,20 @@ ul.features li.sends {
   width: 100%;
   height: 35px;
   padding: 12px 6px;
-  position: absolute;
-  bottom: 70px; 
+  position: relative;
+  bottom: 260px; 
   display: none; /* hide by default, show on desktop */
   color: #fff;
   line-height: 1;
-  background: #1b2834;
+  font-size: 13px; 
 }
 div.features {
-  height: 205px;
+  height: 210px;
   padding-top: 5px;
 }
 div.features ul {
-  padding-left: 0;
+  padding-left: 10px;
+  text-align: left;
 }
 div.features li {
   list-style: none;
@@ -1258,7 +1266,7 @@ div.features li {
   height: 35px;
   padding: 12px 6px;
   position: absolute;
-  bottom: 361px; 
+  bottom: 231px; 
   display: none; /* hide by default, show on desktop */
   color: #fff;
   line-height: 1;

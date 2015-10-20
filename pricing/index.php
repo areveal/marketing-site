@@ -7,13 +7,21 @@
 
 	<section id="pricing1-wrap">
 		<div id="pricing1">
-			
+
+			<div class="price-discount">-- Get 3 months free with yearly billing! --</div>						
 			<ul class="pricing-table">				
 				
 				<li class="price-column">
-					<h3>Free</h3>					
+					<h3>Free</h3>		
+					<div class="price">
+						<span class="annually">Free </span>
+						<span class="monthly invisible">$499 /mo paid monthly</span>
+					</div>										
 					<ul class="features">
-						<li><span>1000 surveys / month</span> Upgrade for More</li>
+						<li>
+							<span>1,000 surveys / month</span>
+							<span class="small-text">Upgrade for more</span>
+						</li>
 						<li>1 Campaign</li>
 						<li>1 User</li>
 						<li>30 Day Data Retention</li>
@@ -27,9 +35,16 @@
 				</li>
 				
 				<li class="price-column">
-					<h3>NPS Lite</h3>					
+					<h3>NPS Lite</h3>	
+					<div class="price">
+						<span class="annually">$99 /mo paid annually </span>
+						<span class="monthly">$149 /mo paid monthly</span>
+					</div>
 					<ul class="features">
-						<li><span>2,500 surveys / month</span> + $15 per 1k extra</li>
+						<li>
+							<span>2,500 surveys / month</span>
+							<span class="small-text">+ $15 per 1k extra</span>
+						</li>
 						<li>2 Campaigns</li>
 						<li>5 Users</li>
 						<li>1 Year Data Retention</li>
@@ -47,19 +62,20 @@
 							<li>Segment Analysis</li>
 							<li>Data Export</li>
 						</ul>
-					</div>
-					<div class="price">
-						$129 /month 
-					</div>
-					<div class="price">
-						$1,160 /year
-					</div>						
+					</div>					
 				</li>
 				
 				<li class="price-column">
 					<h3>NPS Complete</h3>					
+					<div class="price">
+						<span class="annually">$349 /mo paid annually </span>
+						<span class="monthly">$499 /mo paid monthly</span>
+					</div>				
 					<ul class="features">
-						<li><span>25,000 surveys / month</span> + $10 per 1k extra</li>
+						<li>
+							<span>25,000 surveys / month</span>
+							<span class="small-text">+ $10 per 1k extra</span>
+						</li>
 						<li>Unlimited Campaigns</li>
 						<li>Unlimited Users</li>
 						<li>Unlimited Data Retention</li>
@@ -74,19 +90,20 @@
 							<li>Onboarding</li>
 							<li>Priority Phone & Email Support</li>
 						</ul>
-					</div>
-					<div class="price">
-						$499 /month 
-					</div>
-					<div class="price">
-						$4,490 /year
-					</div>					
+					</div>				
 				</li>
 				
 				<li class="price-column">
-					<h3>Enterprise</h3>					
+					<h3>Enterprise</h3>		
+					<div class="price">
+						<span class="annually"><a href="mailto:grow@promoter.io?subject=Custom Plan">Email Us</a></span>
+						<span class="monthly">or call 855-435-5777</span>
+					</div>										
 					<ul class="features">
-						<li><span>Unlimited surveys</span> (sky's the limit)</li>
+						<li>
+							<span>Unlimited Surveys</span>
+							<span class="small-text invisible">+ $15 per 1k extra</span>
+						</li>
 						<li>Unlimited Campaigns</li>
 						<li>Unlimited Users</li>
 						<li>Unlimited Data Retention</li>
@@ -96,14 +113,12 @@
 							<li>Everything in NPS Complete, plus:</li>
 							<br>
 							<li>Custom Onboarding & Training</li>
-							<li>Campaign Administration<br>(let the experts handle it)</li>
-							<li>Dedicated Account Manager<br>(your very own red phone)</li>
+							<li>Campaign Administration</li>
+							<li>Dedicated Account Manager</li>
 							<li>Dedicated Sending IP & Custom Return Path</li>
 						</ul>
 					</div>			
 				</li>	
-
-				<div class="price-discount">-- Get 3+ months free with yearly billing! --</div>			
 				<div class="features-header">-- Features --</div>			
 			</ul>
 
