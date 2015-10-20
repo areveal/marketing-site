@@ -1,0 +1,182 @@
+// only initialize Stellar.js (parallax) if not mobile device
+var isMobile = {
+  Android: function() {
+    return navigator.userAgent.match(/Android/i);
+  },
+  BlackBerry: function() {
+    return navigator.userAgent.match(/BlackBerry/i);
+  },
+  iOS: function() {
+    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+  },
+  Opera: function() {
+    return navigator.userAgent.match(/Opera Mini/i);
+  },
+  Windows: function() {
+    return navigator.userAgent.match(/IEMobile/i);
+  },
+  any: function() {
+    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+  }
+};
+
+// begin jquery dependent scripts
+$(document).ready(function(){
+
+//*************************************************************************
+//STELLAR.JS - parallax scrolling
+
+$(function(){
+    if( !isMobile.any() ){
+      $.stellar({
+          horizontalScrolling: false,
+          // verticalOffset: 40
+      });
+    }
+});
+
+//*************************************************************************
+// INCREMENT COUNTER
+
+(function ($) {
+    function initCounter($counter) {
+        $counter.find('.digit').each(function () {
+            var $display = $(this);
+            var $digit = $display.find('span');
+
+            $digit.html([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0].reverse().join('<br/>'));
+            $digit.css({
+                top: '-' + (parseInt($display.height(), 10) * (10 - parseInt($digit.attr('title'), 10))) + 'px'
+            });
+        });
+
+        animateDigit($counter.find('.digit:last'));
+    }
+    /*
+        Function: animateDigit
+        Moves the digit indicated by $display one step. If the end of the counter has been reach, the subsequent digit(s) will also be rotated
+        Parameters: $display - digit display to be rotated
+    */
+    function animateDigit($display) {
+        var $counter = $display.closest('.counter');
+        var $digit = $display.find('span');
+
+        // If we've reached the end of the counter, tick the previous digit
+        if (parseInt($digit.css('top'), 10) == -1 * parseInt($display.height(), 10)) {
+            animateDigit($display.prevAll('.digit:first'));
+        }
+
+        $digit.animate({
+            top: '+=' + $display.height() + 'px'
+        }, 300, function () {
+            // Repeat the animation on a semi-random interval
+            if ($display.index('.counter .digit') == $counter.find('.digit').length - 1) {
+                setTimeout(function () {
+                    animateDigit($display);
+                }, Math.max(1, Math.random() * 10)); // defines speed
+            }
+
+            // If we've reached the end of the counter, loop back to the top
+            if (parseInt($digit.css('top'), 10) > -1 * parseInt($display.height(), 10)) {
+                $digit.css({
+                    top: '-' + (parseInt($display.height(), 10) * 10) + 'px'
+                });
+            }
+        });
+    }
+
+    $(function () {
+        initCounter($('.counter'));
+    });
+})(jQuery);
+
+//*************************************************************************
+//SMOOTH SCROLL TO ANCHORS
+
+$(function() {
+  $('#intro a').bind('click',function(event){
+	  var $anchor = $(this);
+	  $('html, body').stop().animate({
+			scrollTop: $($anchor.attr('href')).offset().top
+	  }, 400);
+	  event.preventDefault();
+  });
+});
+
+//*************************************************************************
+// TOOLTIPSTER TOOLTIPS
+
+$('.tip').tooltipster();
+
+// end jquery dependent scripts
+});
+
+
+//*************************************************************************
+// RESPONSIVE NAV
+
+var navigation = responsiveNav(".nav-collapse", {
+  animate: true,                    // Boolean: Use CSS3 transitions, true or false
+  transition: 284,                  // Integer: Speed of the transition, in milliseconds
+  label: "Menu",                    // String: Label for the navigation toggle
+  insert: "after",                  // String: Insert the toggle before or after the navigation
+  customToggle: "",                 // Selector: Specify the ID of a custom toggle
+  closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+  openPos: "relative",              // String: Position of the opened nav, relative or static
+  navClass: "nav-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
+  navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
+  jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
+  init: function(){},               // Function: Init callback
+  open: function(){},               // Function: Open callback
+  close: function(){}               // Function: Close callback
+});
+
+//*************************************************************************
+// TOOLTIPSTER TOOLTIPS
+  
+var nav = responsiveNav(".nav-collapse");
+
+//*************************************************************************
+// SWIPE 2.0 GALLERY (not jquery dependent)
+
+var elem = document.getElementById('gallery-inner');
+window.gallery = Swipe(elem, {
+  // continuous: true,
+  // startSlide: 4,
+  // auto: 3000,
+  // disableScroll: true,
+  // stopPropagation: true,
+  // callback: function(index, element) {},
+  // transitionEnd: function(index, element) {}
+  
+  /* handles dot indicators */
+  callback: function(pos) {
+    var i = bullets.length;
+    while (i--) {
+      bullets[i].className = ' ';
+    }
+    bullets[pos].className = 'on';
+  }
+});
+
+var bullets = document.getElementById('indicators').getElementsByTagName('li');
+
+//*************************************************************************
+//USERVOICE FEEDBACK TAB
+
+/* UserVoice JavaScript SDK (only needed once on a page) */
+(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/hpy4hb9zH95qCZd6wZjgHA.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})()
+
+/* A tab to launch the Classic Widget */
+UserVoice = window.UserVoice || [];
+UserVoice.push(['showTab', 'classic_widget', {
+	mode: 'feedback',
+  primary_color: '#555555',
+  link_color: '#26679c',
+  forum_id: 199513,
+  tab_label: 'Feedback',
+  tab_color: '#26679c',
+  tab_position: 'middle-right',
+  tab_inverted: false
+}]);
+

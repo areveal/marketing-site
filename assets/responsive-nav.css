@@ -1,0 +1,182 @@
+/*************************************************************************
+. NAVIGATION - responsive
+*************************************************************************/
+
+#nav {
+  padding: 52px 0 0 0;
+  float: right;
+}
+#nav ul,
+#nav li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  list-style: none;
+}
+#nav a {
+  padding: 6px 10px;
+  color: #fff;
+  font-size: 1.4rem;
+  font-family: 'proxima-semi';
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#nav a.signup {
+  margin-left: 10px;
+  line-height: 1;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 3px;
+}
+#nav a.signup:hover {
+  color: #fff;
+  background: #11c0b5;
+  border-color: #11c0b5;  
+}
+
+/* nav toggle styles */
+.nav-toggle {
+  position: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  text-indent: -999px;
+  position: relative;
+  overflow: hidden;
+  width: 70px;
+  height: 55px;
+  float: right;
+}
+.nav-toggle:before {
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  font-size: 3.8rem;
+  text-transform: none;
+  position: absolute;
+  content: "≡";
+  text-indent: 0;
+  text-align: center;
+  line-height: 60px;
+  speak: none;
+  width: 100%;
+  top: 3px;
+  left: 0;
+}
+.nav-toggle.active::before {
+  font-size: 4.8rem;
+  content:"×";
+}
+
+@media screen and (min-width: 768px) {
+  .js .nav-collapse {
+    position: relative;
+  }
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
+}
+
+
+/* begin plugin */
+/*! responsive-nav.js 1.0.32 by @viljamis */
+
+/********************************
+/ iPad portrait & tiny tablets */
+@media only screen and (max-width: 959px) {
+
+  #header-wrap.privacy .nav-toggle:before {    
+    line-height: 40px;    
+  }
+  
+}
+
+/********************************
+/ mobile phones                */
+@media only screen and (max-width: 767px) {
+
+  #nav {
+    padding: 0;
+    top: -30px;
+    float: none;
+  }
+  #nav ul {
+    display: block;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    background: #283643; 
+    box-shadow: inset 0 -2px 3px rgba(0,0,0,0.4);
+  }
+  .nav-collapse li {
+    width: 100%;
+    display: block;    
+    border-top: 1px solid #303e4c;
+    border-bottom: 1px solid #1b262f;
+  }
+  #nav a {
+    width: 100%;
+    padding: 16px 10px;
+    display: block;
+    font-size: 1.6rem;
+    text-decoration: none;     
+  }
+  #nav a:hover,
+  #nav a.signup:hover {
+    color: #fff;
+    border-radius: 0;
+    background: #374655;
+  }
+  #nav a.signup {
+    margin: 0;
+    line-height: inherit;
+    border: none;
+    border-radius: 3px;
+  }
+  #nav li:nth-child(5),
+  #nav li:nth-child(6) {
+    width: 49%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+  #nav a:nth-child(5),
+  #nav a:nth-child(6) {
+    width: 50%;
+    display: inline-block;
+  }
+  .nav-collapse ul ul a {
+    background: #ca3716;
+    padding-left: 2em;
+  }
+  .js .nav-collapse {
+    clip: rect(0 0 0 0);
+    max-height: 0;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    zoom: 1;
+  }
+  .nav-collapse.opened {
+    max-height: 9999px;
+  }
+  .disable-pointer-events {
+    pointer-events: none !important;
+  }
+  .nav-toggle {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+
+}

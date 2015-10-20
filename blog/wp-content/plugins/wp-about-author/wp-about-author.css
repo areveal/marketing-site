@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+.wp-about-author-containter h3, .wp-about-author-containter p{
+	margin:0 0 10px 0;
+	padding:0;
+}
+.wp-about-author-containter-top{
+	background: #f2f7fc;
+	border-top: 4px solid #000;
+	clear: both;
+	margin: 20px 0;
+	overflow: hidden;
+	padding: 20px;
+}
+.wp-about-author-containter-around{
+	background: #f2f7fc;
+	border: 1px solid #000;
+	clear: both;
+	margin: 20px 0;
+	overflow: hidden;
+	padding: 20px;
+}
+.wp-about-author-containter-none{
+	background: #6c879f;
+	border-top:none;
+	clear: both;
+	margin: 20px 0;
+	overflow: hidden;
+	padding: 20px;
+	color: #fff;
+}
+.wp-about-author-pic{
+	float: left;
+	margin: 0 -122px 0 0;
+	padding: 6px;
+}
+.wp-about-author-pic.wp-about-author-circle,
+.wp-about-author-pic.wp-about-author-circle img {
+	border-radius: 50%;
+	box-shadow: none;
+}
+.wp-about-author-text{
+	margin: 0 0 0 130px !important;
+	display: table;
+	font-size: 1.4rem !important;
+	line-height: 20px !important;
+}
+.wp-about-author-text > h3 {
+	margin: 0 0 8px 0 !important;
+	font-size: 2.1rem;
+	line-height: 1;
+	color: #fff;
+}
+.wp-about-author-text > h3 a {
+	color: #fff !important;
+	text-decoration: none !important;
+}
+.wp-about-author-text p {
+	margin: 0 0 5px 0;
+	padding: 0;
+	color: #fff !important;
+	font-size: 1.4rem !important;
+	line-height: 20px !important;
+}
+.wp-about-author-text p a {
+	color: #21303d !important;
+	text-decoration: none;
+}
+.wp-about-author-text p a:hover {
+	color: #fff !important;
+}
+.wp-about-author-text p.wpa-nomargin {
+        margin: 0;
+}
+.wpa-social-icons{
+        margin:0 3px;
+}
+
