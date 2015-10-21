@@ -1248,7 +1248,8 @@ ul.features li.sends {
   display: none; /* hide by default, show on desktop */
   color: #fff;
   line-height: 1;
-  font-size: 13px; 
+  font-size: 1.9rem; 
+  font-family: 'proxima-light';
 }
 div.features {
   height: 210px;

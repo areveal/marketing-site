@@ -8,14 +8,14 @@
 	<section id="pricing1-wrap">
 		<div id="pricing1">
 
-			<div class="price-discount">-- Get 3 months free with yearly billing! --</div>						
+			<div class="price-discount">-- Get 3 months free with annual billing! --</div>						
 			<ul class="pricing-table">				
 				
 				<li class="price-column">
 					<h3>Free</h3>		
 					<div class="price">
 						<span class="annually">Free </span>
-						<span class="monthly invisible">$499 /mo paid monthly</span>
+						<span class="monthly invisible">$499 /mo billed monthly</span>
 					</div>										
 					<ul class="features">
 						<li>
@@ -37,8 +37,8 @@
 				<li class="price-column">
 					<h3>NPS Lite</h3>	
 					<div class="price">
-						<span class="annually">$99 /mo paid annually </span>
-						<span class="monthly">$149 /mo paid monthly</span>
+						<span class="annually">$99 /mo billed annually </span>
+						<span class="monthly">$149 /mo billed monthly</span>
 					</div>
 					<ul class="features">
 						<li>
@@ -68,8 +68,8 @@
 				<li class="price-column">
 					<h3>NPS Complete</h3>					
 					<div class="price">
-						<span class="annually">$349 /mo paid annually </span>
-						<span class="monthly">$499 /mo paid monthly</span>
+						<span class="annually">$369 /mo billed annually </span>
+						<span class="monthly">$499 /mo billed monthly</span>
 					</div>				
 					<ul class="features">
 						<li>

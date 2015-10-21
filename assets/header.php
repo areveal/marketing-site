@@ -289,7 +289,7 @@
 			<h1>Simple pricing that scales with your growth</h1>
 			<h2>Risk free, 60-day money back guarantee</h2>
 			<a href="https://app.promoter.io/account/signup/" class="btn-green">Get Started</a>
-			<span class="trial-detail">Free Plan Includes 25 Surveys Per Month, No CC Required</span>
+			<span class="trial-detail">Free Plan Includes 1000 Surveys Per Month, No CC Required</span>
 		';} ?>
 
 		<?php if ($section=="about") {echo '
