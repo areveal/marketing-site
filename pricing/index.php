@@ -37,8 +37,8 @@
 				<li class="price-column">
 					<h3>NPS Lite</h3>	
 					<div class="price">
-						<span class="annually">$99 /mo billed annually </span>
-						<span class="monthly">$149 /mo billed monthly</span>
+						<span class="annually">$97 /mo billed annually </span>
+						<span class="monthly">$129 /mo billed monthly</span>
 					</div>
 					<ul class="features">
 						<li>
