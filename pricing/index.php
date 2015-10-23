@@ -43,7 +43,7 @@
 					<ul class="features">
 						<li>
 							<span>2,500 surveys / month</span>
-							<span class="small-text">+ $15 per 1k extra</span>
+							<span class="small-text">+ $25 per 1k extra</span>
 						</li>
 						<li>2 Campaigns</li>
 						<li>5 Users</li>
@@ -74,7 +74,7 @@
 					<ul class="features">
 						<li>
 							<span>25,000 surveys / month</span>
-							<span class="small-text">+ $10 per 1k extra</span>
+							<span class="small-text">+ $15 per 1k extra</span>
 						</li>
 						<li>Unlimited Campaigns</li>
 						<li>Unlimited Users</li>
